@@ -186,6 +186,14 @@ img {
   color: var(--accent-color);
 }
 
+.contact-bottom:hover {
+  color: var(--accent-color);
+}
+
+.contact-bottom:focus {
+  color: var(--accent-color);
+}
+
 li .focus-hover:hover {
   color: var(--accent-color);
 }
