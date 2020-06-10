@@ -9,7 +9,7 @@
 body {
   font-family: Roboto;
   font-style: normal;
-  
+
   background-color: var(--primery-bg-color);
   color: var(--title-text-color);
   color: var(--primery-text-color);
@@ -22,13 +22,19 @@ p .text {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--primery-text-color);
 }
 
 .worker {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
 
@@ -140,6 +146,18 @@ ul {
   color: var(--primery-text-color);
 }
 
+.contact-bottom {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 img {
   max-width: 100%;
 }
@@ -191,7 +209,7 @@ li .focus-hover:focus {
   line-height: 24px;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .feature-button {
