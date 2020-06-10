@@ -2,11 +2,14 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primery-bg-color: #e5e5e5;
+  --primery-bg-color: #ffffff;
   --secondary-color: #ffffff;
 }
 
 body {
+  font-family: Roboto;
+  font-style: normal;
+  
   background-color: var(--primery-bg-color);
   color: var(--title-text-color);
   color: var(--primery-text-color);
@@ -15,8 +18,6 @@ body {
 }
 
 p .text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -24,7 +25,11 @@ p .text {
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primery-text-color);
+}
+
+.worker {
+  color: var(--primery-text-color);
 }
 
 .headerlogo {
@@ -38,7 +43,6 @@ p .text {
 .headerlogo,
 .footerlogo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -55,8 +59,7 @@ ul {
 
 .list-title {
   color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -65,9 +68,8 @@ ul {
 }
 
 .hero-title {
-  color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
+  color: var(--secondary-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -77,8 +79,6 @@ ul {
 }
 
 .hero-button {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -88,8 +88,6 @@ ul {
 }
 
 .list-item {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -99,8 +97,6 @@ ul {
 }
 
 .second-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -109,8 +105,6 @@ ul {
 }
 
 .name-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -120,8 +114,6 @@ ul {
 }
 
 .creating {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -131,8 +123,6 @@ ul {
 }
 
 .address {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -142,14 +132,16 @@ ul {
 }
 
 .contact-nav {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primery-text-color);
+}
+
+img {
+  max-width: 100%;
 }
 
 .ghost {
@@ -185,8 +177,6 @@ li .focus-hover:focus {
 }
 
 .footer-list {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -195,12 +185,65 @@ li .focus-hover:focus {
 }
 
 .last-footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.feature-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.feature-button:hover {
+  color: var(--accent-color);
+}
+
+.feature-button:focus {
+  color: var(--accent-color);
+}
+
+.title-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.paragraf-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 24px;
-  /* or 200% */
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--primery-text-color);
+}
+
+.paragraf-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
 }
