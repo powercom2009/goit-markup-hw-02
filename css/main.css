@@ -2,11 +2,16 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primery-bg-color: #ffffff;
+  --primery-bg-color: #123456;
   --secondary-color: #ffffff;
 }
 
+html {
+  box-sizing: border box;
+}
+
 body {
+  padding-inline-start: 0px;
   font-family: Roboto;
   font-style: normal;
 
@@ -31,9 +36,9 @@ p .text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  text-align: center;
   line-height: 19px;
   /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
@@ -65,6 +70,7 @@ ul {
 
 .list-title {
   color: var(--title-text-color);
+  
 
   font-weight: bold;
   font-size: 14px;
@@ -84,14 +90,6 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-button {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
-  letter-spacing: 0.06em;
-  color: var(--secondary-color);
-}
 
 .list-item {
   font-weight: normal;
@@ -103,7 +101,12 @@ ul {
 }
 
 .second-title {
+  padding-top: 94px;
+  padding-bottom: 60px;
   font-weight: bold;
+  font-family: Roboto;
+  font-style: normal;
+  text-align: center;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
@@ -114,12 +117,14 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  text-align: center;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
 .creating {
+  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -138,6 +143,7 @@ ul {
 }
 
 .contact-nav {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -211,6 +217,7 @@ li .focus-hover:focus {
 }
 
 .last-footer {
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -221,15 +228,25 @@ li .focus-hover:focus {
 }
 
 .feature-button {
+  margin-right: 8px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
-  text-align: center;
+  text-item: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.button-nav:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-nav {
+  display: flex;
+  justify-content: center;
 }
 
 .feature-button:hover {
@@ -258,7 +275,6 @@ li .focus-hover:focus {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
@@ -272,4 +288,169 @@ li .focus-hover:focus {
   /* or 156% */
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav-main,
+.site-nav-address,
+.site-header-content {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-address-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-nav-item .focus-hover {
+  display: block;
+  line-height: 64px;
+}
+
+.site-header-content {
+  align-items: center;
+}
+
+.site-nav-main {
+  margin-left: 87px;
+}
+
+.auth {
+  margin-left: auto;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+}
+
+.hero.container {
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+}
+
+.feauture-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0;
+}
+
+.project, {
+  width: calc(1170/4)
+  display: flex;
+}
+
+.feature-li {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.apps {
+  display: flex;
+
+}
+
+.app {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.liworker {
+ margin-right: 30px;
+ text-align: center;
+}
+
+.companys {
+  display: flex;
+}
+
+.companys-list {
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  padding-bottom: 27px;
+}
+
+.project-block {
+  margin-bottom: 94px;
+}
+
+.img-advantages {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.footer-box {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.address-bottom {
+  padding: 0;
+}
+
+
+.litem {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid #5c4d9b;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+
+.feauture-list {
+  padding: 0, 0, 0, 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.litem:ntn-child(3n) {
+  margin-right: 0px;
+}
+
+ul.project.list.feauture-list {
+  padding: 0px;
 }
