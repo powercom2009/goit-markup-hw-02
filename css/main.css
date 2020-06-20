@@ -2,7 +2,7 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primery-bg-color: #123456;
+  --primery-bg-color: #ffffff;
   --secondary-color: #ffffff;
 }
 
@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  margin: 0px;
   padding-inline-start: 0px;
   font-family: Roboto;
   font-style: normal;
@@ -53,6 +54,7 @@ p .text {
 
 .headerlogo,
 .footerlogo {
+
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -348,30 +350,32 @@ li .focus-hover:focus {
 }
 
 .hero-title {
+  max-width: 700px;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
 
 }
 
 
 .hero {
-  flex-direction: column;
+  display: block;
   align-items: center;
   background: rgba(47, 48, 58, 0.8);
   height: 600px;
-  width: 1600px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+
+
 }
 
 .hero-button {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   width: 200px;
   height: 50px;
   font-weight: bold;
@@ -381,11 +385,11 @@ li .focus-hover:focus {
   background: var(--accent-color);
   color: var(--secondary-color);
   border-radius: 4px;
-  position: absolute;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feauture-item {
