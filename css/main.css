@@ -217,6 +217,8 @@ li .focus-hover:focus {
 }
 
 .last-footer {
+  border-top: solid 1px #777;
+
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -225,6 +227,18 @@ li .focus-hover:focus {
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.direction-class {
+  flex-direction: column;
+  margin-right: 84px;
+  align-items: baseline;
+
+}
+
+.direction-class:(ntn :nth-child(2n)) {
+  margin-right: 94px;
+
 }
 
 .feature-button {
@@ -291,7 +305,7 @@ li .focus-hover:focus {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -302,6 +316,10 @@ li .focus-hover:focus {
 .site-nav-address,
 .site-header-content {
   display: flex;
+}
+
+.site-header-content {
+  height: 80px;
 }
 
 .site-nav-item:not(:last-child) {
@@ -337,11 +355,17 @@ li .focus-hover:focus {
 
 }
 
-.hero.container {
+
+.hero {
   flex-direction: column;
   align-items: center;
-  height: 600px;
   background: rgba(47, 48, 58, 0.8);
+  height: 600px;
+  width: 1600px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero-button {
@@ -447,10 +471,14 @@ li .focus-hover:focus {
   flex-wrap: wrap;
 }
 
-.litem:ntn-child(3n) {
+.litem:(ntn-child(3n+1)) {
   margin-right: 0px;
 }
 
 ul.project.list.feauture-list {
   padding: 0px;
+}
+
+.flex-footer {
+  display: flex;
 }
